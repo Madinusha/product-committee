@@ -1,0 +1,18 @@
+"""Точка входа: python run.py"""
+import uvicorn
+
+from backend.core.config import get_settings
+
+
+def main() -> None:
+    settings = get_settings()
+    uvicorn.run(
+        "backend.api.main:app",
+        host=settings.HOST,
+        port=settings.PORT,
+        reload=settings.DEBUG,
+    )
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Окружение и секреты
+.env
+
+# Артефакты
+*.db
+*.sqlite
+logs/
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Данные (большие датасеты не в git, скрипты их генерируют)
+backend/data/raw/
+backend/data/export/
+
+# IDE / ОС
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store

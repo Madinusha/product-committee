@@ -1,0 +1,69 @@
+[project]
+name = "product-committee"
+version = "0.1.0"
+description = "Виртуальный продуктовый комитет — мультиагентная система принятия продуктовых решений с RAG (Ollama + HuggingFace, BM25+векторный гибридный поиск)"
+readme = "README.md"
+authors = [
+    { name = "Мадина" },
+    { name = "Коля" },
+]
+requires-python = ">=3.12,<4.0"
+
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.34",
+    "sqlalchemy[asyncio]>=2.0",
+    "asyncpg>=0.30",
+    "aiosqlite>=0.20",
+    "pydantic>=2.9",
+    "pydantic-settings>=2.6",
+    "email-validator>=2.2",
+    "PyJWT>=2.10",
+    "bcrypt>=4.2",
+    "httpx>=0.28",
+    "colorlog>=6.9",
+    "redis>=5.2",
+    "qdrant-client>=1.12",
+    "rank-bm25>=0.2.2",
+    "sentence-transformers>=3.3",
+    "transformers>=4.47",
+    "torch>=2.5",
+    "celery[redis]>=5.4",
+    "python-multipart>=0.0.19",
+]
+
+[project.urls]
+Repository = "https://github.com/CodeHunterOfficial/product-committee"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.25",
+    "pytest-cov>=6.0",
+    "respx>=0.22",
+    "ruff>=0.8",
+    "mypy>=1.13",
+    "pre-commit>=4.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "--cov=backend --cov-report=term-missing --cov-fail-under=70 -q"
+
+[tool.coverage.run]
+source = ["backend"]
+omit = ["backend/utils/hf_llm.py"]
+
+[tool.ruff]
+line-length = 120  # русскоязычные строки/докстринги длиннее стандартных 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B"]
+# N818: базовое исключение CommitteeException названо по аналогии с референсом (RUNGException), без Error-суффикса
+ignore = ["N818"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
