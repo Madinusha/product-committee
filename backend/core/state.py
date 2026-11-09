@@ -18,6 +18,8 @@ class StateKeys:
     SITUATION = "situation"  # текст продуктовой ситуации
     DOMAIN = "domain"  # b2b_saas | marketplace | fintech | media | general
     DECISION_TYPE = "decision_type"  # тип решения: приоритизация / launch / growth / ...
+    EVAL_MODE = "eval_mode"  # ablation-режим запроса (baseline/full/...): нужен кэшу и eval
+    RETRIEVAL_BACKEND = "retrieval_backend"  # hybrid | bm25 | none: какой канал обслужил запрос
 
     # --- RAG-контекст (заполняет Коля, этап 7) ---
     GLOSSARY_USED = (
