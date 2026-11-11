@@ -1,0 +1,2532 @@
+[
+ {
+  "term": "MVP",
+  "definition": "минимально жизнеспособный продукт для проверки гипотезы с минимальными затратами",
+  "domain": "general"
+ },
+ {
+  "term": "MMP",
+  "definition": "минимально маркетинговый продукт — версия, готовая к продвижению",
+  "domain": "general"
+ },
+ {
+  "term": "MLP",
+  "definition": "минимально любимый продукт — MVP с фокусом на пользовательский опыт",
+  "domain": "general"
+ },
+ {
+  "term": "PoC",
+  "definition": "proof of concept — проверка технической реализуемости идеи",
+  "domain": "general"
+ },
+ {
+  "term": "Prototype",
+  "definition": "интерактивный макет для проверки гипотез до разработки",
+  "domain": "general"
+ },
+ {
+  "term": "Wireframe",
+  "definition": "схематичный эскиз интерфейса без дизайна",
+  "domain": "general"
+ },
+ {
+  "term": "Backlog",
+  "definition": "упорядоченный список задач и идей продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Roadmap",
+  "definition": "план развития продукта по направлениям и срокам",
+  "domain": "general"
+ },
+ {
+  "term": "PRD",
+  "definition": "product requirements document — документ требований к продукту",
+  "domain": "general"
+ },
+ {
+  "term": "User Story",
+  "definition": "описание потребности пользователя в формате как-кто-чтобы",
+  "domain": "general"
+ },
+ {
+  "term": "Acceptance Criteria",
+  "definition": "условия, при которых история считается выполненной",
+  "domain": "general"
+ },
+ {
+  "term": "Epic",
+  "definition": "крупный блок работы, разбиваемый на несколько историй",
+  "domain": "general"
+ },
+ {
+  "term": "Spike",
+  "definition": "ограниченное по времени исследование для снятия неопределённости",
+  "domain": "general"
+ },
+ {
+  "term": "Technical Debt",
+  "definition": "накопленные компромиссы в коде, замедляющие развитие",
+  "domain": "general"
+ },
+ {
+  "term": "Feature Flag",
+  "definition": "выключатель функциональности без деплоя нового кода",
+  "domain": "general"
+ },
+ {
+  "term": "Canary Release",
+  "definition": "постепенный раскат на часть пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "Rollout",
+  "definition": "процесс постепенного включения фичи для пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "Deprecation",
+  "definition": "планируемый вывод функциональности из поддержки",
+  "domain": "general"
+ },
+ {
+  "term": "Product Vision",
+  "definition": "долгосрочное видение продукта и его ценности",
+  "domain": "general"
+ },
+ {
+  "term": "Product Strategy",
+  "definition": "подход к достижению видения через конкретные направления",
+  "domain": "general"
+ },
+ {
+  "term": "North Star Metric",
+  "definition": "единственная метрика, отражающая главную ценность продукта",
+  "domain": "general"
+ },
+ {
+  "term": "OKR",
+  "definition": "objectives and key results — каскад целей и измеримых результатов",
+  "domain": "general"
+ },
+ {
+  "term": "KPI",
+  "definition": "ключевой показатель эффективности процесса или продукта",
+  "domain": "general"
+ },
+ {
+  "term": "SMART",
+  "definition": "критерии цели: конкретность, измеримость, достижимость, релевантность, срок",
+  "domain": "general"
+ },
+ {
+  "term": "AARRR",
+  "definition": "метрики воронки: acquisition, activation, retention, revenue, referral",
+  "domain": "general"
+ },
+ {
+  "term": "AARRR Pirate Metrics",
+  "definition": "модель воронки роста по пяти стадиям пути пользователя",
+  "domain": "general"
+ },
+ {
+  "term": "HADI Cycle",
+  "definition": "цикл гипотеза-действие-данные-выводы для проверки идей",
+  "domain": "general"
+ },
+ {
+  "term": "Hypothesis",
+  "definition": "проверяемое предположение о влиянии изменения на метрику",
+  "domain": "general"
+ },
+ {
+  "term": "Experiment",
+  "definition": "контролируемая проверка гипотезы на пользователях",
+  "domain": "general"
+ },
+ {
+  "term": "A/B Test",
+  "definition": "сравнение двух вариантов на случайно разделённых группах",
+  "domain": "general"
+ },
+ {
+  "term": "A/B/n Test",
+  "definition": "одновременное сравнение нескольких вариантов с контролем",
+  "domain": "general"
+ },
+ {
+  "term": "Multivariate Test",
+  "definition": "тест нескольких изменений и их комбинаций одновременно",
+  "domain": "general"
+ },
+ {
+  "term": "Control Group",
+  "definition": "группа пользователей без изменения, эталон для сравнения",
+  "domain": "general"
+ },
+ {
+  "term": "Randomization",
+  "definition": "случайное распределение пользователей по группам теста",
+  "domain": "general"
+ },
+ {
+  "term": "Statistical Significance",
+  "definition": "вероятность, что эффект не является случайной флуктуацией",
+  "domain": "general"
+ },
+ {
+  "term": "P-value",
+  "definition": "вероятность получить наблюдаемый эффект при нулевой гипотезе",
+  "domain": "general"
+ },
+ {
+  "term": "Confidence Interval",
+  "definition": "интервал, накрывающий истинное значение с заданной вероятностью",
+  "domain": "general"
+ },
+ {
+  "term": "MDE",
+  "definition": "minimum detectable effect — минимальный эффект, который тест способен заметить",
+  "domain": "general"
+ },
+ {
+  "term": "Sample Size",
+  "definition": "объём выборки, необходимый для обнаружения MDE",
+  "domain": "general"
+ },
+ {
+  "term": "Power",
+  "definition": "чувствительность теста к реальному эффекту (1 минус вероятность ошибки II рода)",
+  "domain": "general"
+ },
+ {
+  "term": "Type I Error",
+  "definition": "ложное обнаружение эффекта, которого нет",
+  "domain": "general"
+ },
+ {
+  "term": "Type II Error",
+  "definition": "пропущенный реальный эффект",
+  "domain": "general"
+ },
+ {
+  "term": "Peeking Problem",
+  "definition": "искажение p-value при подглядывании в тест до его завершения",
+  "domain": "general"
+ },
+ {
+  "term": "Novelty Effect",
+  "definition": "временный подъём метрики из-за новизны изменения",
+  "domain": "general"
+ },
+ {
+  "term": "Guardrail Metric",
+  "definition": "метрика-ограждение, которая не должна ухудшаться",
+  "domain": "general"
+ },
+ {
+  "term": "Bayesian Test",
+  "definition": "подход к тестам через апостериорные распределения",
+  "domain": "general"
+ },
+ {
+  "term": "Multi-armed Bandit",
+  "definition": "адаптивное распределение трафика в пользу лучшего варианта",
+  "domain": "general"
+ },
+ {
+  "term": "Conversion Rate",
+  "definition": "доля пользователей, совершивших целевое действие",
+  "domain": "general"
+ },
+ {
+  "term": "Funnel",
+  "definition": "последовательность шагов пользователя к целевому действию",
+  "domain": "general"
+ },
+ {
+  "term": "Funnel Drop-off",
+  "definition": "потеря пользователей между шагами воронки",
+  "domain": "general"
+ },
+ {
+  "term": "Activation",
+  "definition": "первое значимое действие, после которого пользователь закрепляется",
+  "domain": "general"
+ },
+ {
+  "term": "Aha Moment",
+  "definition": "момент осознания пользователем ключевой ценности продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Habit Loop",
+  "definition": "цикл триггер-действие-награда, формирующий привычку",
+  "domain": "general"
+ },
+ {
+  "term": "Onboarding",
+  "definition": "процесс введения нового пользователя в продукт",
+  "domain": "general"
+ },
+ {
+  "term": "Time to Value",
+  "definition": "время от регистрации до первой реальной пользы",
+  "domain": "general"
+ },
+ {
+  "term": "User Persona",
+  "definition": "обобщённый портрет целевого пользователя",
+  "domain": "general"
+ },
+ {
+  "term": "JTBD",
+  "definition": "jobs to be done — работа, которую пользователь нанимает продукт выполнить",
+  "domain": "general"
+ },
+ {
+  "term": "CJM",
+  "definition": "customer journey map — карта пути пользователя и его точек контакта",
+  "domain": "general"
+ },
+ {
+  "term": "User Flow",
+  "definition": "сценарий движения пользователя по интерфейсу",
+  "domain": "general"
+ },
+ {
+  "term": "Information Architecture",
+  "definition": "структура и организация контента и функций продукта",
+  "domain": "general"
+ },
+ {
+  "term": "UX Research",
+  "definition": "исследование поведения и потребностей пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "Usability Test",
+  "definition": "наблюдение за реальными пользователями при выполнении задач",
+  "domain": "general"
+ },
+ {
+  "term": "Depth Interview",
+  "definition": "глубинное интервью для выявления мотиваций пользователя",
+  "domain": "general"
+ },
+ {
+  "term": "Survey",
+  "definition": "структурированный опрос пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "NPS",
+  "definition": "net promoter score — индекс готовности рекомендовать продукт",
+  "domain": "general"
+ },
+ {
+  "term": "CSAT",
+  "definition": "customer satisfaction — оценка удовлетворённости продуктом",
+  "domain": "general"
+ },
+ {
+  "term": "CES",
+  "definition": "customer effort score — оценка усилий пользователя для достижения цели",
+  "domain": "general"
+ },
+ {
+  "term": "Qualitative Research",
+  "definition": "качественные методы: интервью, наблюдение, фокус-группы",
+  "domain": "general"
+ },
+ {
+  "term": "Quantitative Research",
+  "definition": "количественные методы: опросы, аналитика, эксперименты",
+  "domain": "general"
+ },
+ {
+  "term": "Bias in Research",
+  "definition": "систематическое искажение данных исследования",
+  "domain": "general"
+ },
+ {
+  "term": "Survivorship Bias",
+  "definition": "ошибка выборки: видны только оставшиеся пользователи",
+  "domain": "general"
+ },
+ {
+  "term": "Confirmation Bias",
+  "definition": "склонность искать подтверждение своей гипотезы",
+  "domain": "general"
+ },
+ {
+  "term": "Voice of Customer",
+  "definition": "систематический сбор обратной связи пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "Feedback Loop",
+  "definition": "механизм сбора и учёта обратной связи в развитии продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Product Discovery",
+  "definition": "этап поиска и проверки идей до разработки",
+  "domain": "general"
+ },
+ {
+  "term": "Dual-track Agile",
+  "definition": "параллельные треки discovery и delivery",
+  "domain": "general"
+ },
+ {
+  "term": "Scrum",
+  "definition": "фреймворк гибкой разработки со спринтами и ролями",
+  "domain": "general"
+ },
+ {
+  "term": "Kanban",
+  "definition": "метод управления потоком задач с ограничением WIP",
+  "domain": "general"
+ },
+ {
+  "term": "Sprint",
+  "definition": "фиксированный отрезок времени для выполнения набора задач",
+  "domain": "general"
+ },
+ {
+  "term": "Sprint Planning",
+  "definition": "планирование набора работ на спринт",
+  "domain": "general"
+ },
+ {
+  "term": "Sprint Retrospective",
+  "definition": "разбор спринта и улучшение процессов команды",
+  "domain": "general"
+ },
+ {
+  "term": "Daily Standup",
+  "definition": "короткая ежедневная синхронизация команды",
+  "domain": "general"
+ },
+ {
+  "term": "Definition of Done",
+  "definition": "согласованный список признаков завершённости работы",
+  "domain": "general"
+ },
+ {
+  "term": "Velocity",
+  "definition": "объём работы, который команда выполняет за спринт",
+  "domain": "general"
+ },
+ {
+  "term": "WIP Limit",
+  "definition": "ограничение числа задач в работе одновременно",
+  "domain": "general"
+ },
+ {
+  "term": "Prioritization",
+  "definition": "упорядочение задач по ценности и стоимости",
+  "domain": "general"
+ },
+ {
+  "term": "RICE",
+  "definition": "приоритизация: reach, impact, confidence, effort",
+  "domain": "general"
+ },
+ {
+  "term": "ICE Score",
+  "definition": "быстрая приоритизация: impact, confidence, ease",
+  "domain": "general"
+ },
+ {
+  "term": "MoSCoW",
+  "definition": "категории приоритетов: must, should, could, won't",
+  "domain": "general"
+ },
+ {
+  "term": "Value vs Effort",
+  "definition": "матрица приоритизации по ценности и трудозатратам",
+  "domain": "general"
+ },
+ {
+  "term": "Cost of Delay",
+  "definition": "потеря ценности из-за откладывания работы",
+  "domain": "general"
+ },
+ {
+  "term": "Opportunity Cost",
+  "definition": "ценность упущенной альтернативы при выборе",
+  "domain": "general"
+ },
+ {
+  "term": "Trade-off",
+  "definition": "осознанный обмен одного преимущества на другое",
+  "domain": "general"
+ },
+ {
+  "term": "Stakeholder",
+  "definition": "заинтересованное лицо, влияющее на продукт",
+  "domain": "general"
+ },
+ {
+  "term": "Alignment",
+  "definition": "согласованность команды и стейкхолдеров по целям",
+  "domain": "general"
+ },
+ {
+  "term": "Expectation Management",
+  "definition": "управление ожиданиями стейкхолдеров",
+  "domain": "general"
+ },
+ {
+  "term": "Escalation",
+  "definition": "передача конфликта или блокера на уровень выше",
+  "domain": "general"
+ },
+ {
+  "term": "Cross-functional Team",
+  "definition": "команда со всеми навыками для доставки ценности",
+  "domain": "general"
+ },
+ {
+  "term": "Product Owner",
+  "definition": "роль, отвечающая за ценность бэклога и приоритеты",
+  "domain": "general"
+ },
+ {
+  "term": "Project Manager",
+  "definition": "роль, отвечающая за сроки, ресурсы и координацию",
+  "domain": "general"
+ },
+ {
+  "term": "Tech Lead",
+  "definition": "роль, отвечающая за технические решения и качество кода",
+  "domain": "general"
+ },
+ {
+  "term": "Design System",
+  "definition": "библиотека переиспользуемых UI-компонентов и правил",
+  "domain": "general"
+ },
+ {
+  "term": "Accessibility",
+  "definition": "доступность продукта для пользователей с ограничениями",
+  "domain": "general"
+ },
+ {
+  "term": "Responsive Design",
+  "definition": "адаптация интерфейса под разные экраны",
+  "domain": "general"
+ },
+ {
+  "term": "Dark Launch",
+  "definition": "включение функциональности без видимости пользователям",
+  "domain": "general"
+ },
+ {
+  "term": "Dogfooding",
+  "definition": "использование продукта собственной командой",
+  "domain": "general"
+ },
+ {
+  "term": "Beta Test",
+  "definition": "ограниченное тестирование версии до общего релиза",
+  "domain": "general"
+ },
+ {
+  "term": "Feature Complete",
+  "definition": "состояние, когда вся запланированная функциональность готова",
+  "domain": "general"
+ },
+ {
+  "term": "Release Notes",
+  "definition": "описание изменений для пользователей в релизе",
+  "domain": "general"
+ },
+ {
+  "term": "Changelog",
+  "definition": "журнал всех изменений версии продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Semantic Versioning",
+  "definition": "схема версий: мажорные, минорные, патч-изменения",
+  "domain": "general"
+ },
+ {
+  "term": "Production Environment",
+  "definition": "боевое окружение с реальными пользователями",
+  "domain": "general"
+ },
+ {
+  "term": "Staging Environment",
+  "definition": "предбоевое окружение для проверки релизов",
+  "domain": "general"
+ },
+ {
+  "term": "CI/CD",
+  "definition": "автоматизация сборки, тестирования и деплоя",
+  "domain": "general"
+ },
+ {
+  "term": "Monitoring",
+  "definition": "наблюдение за состоянием системы и метриками",
+  "domain": "general"
+ },
+ {
+  "term": "Alerting",
+  "definition": "оповещения о деградации метрик и сбоях",
+  "domain": "general"
+ },
+ {
+  "term": "SLO",
+  "definition": "service level objective — целевой уровень качества сервиса",
+  "domain": "general"
+ },
+ {
+  "term": "Error Budget",
+  "definition": "допустимый объём ошибок в рамках SLO",
+  "domain": "general"
+ },
+ {
+  "term": "Incident",
+  "definition": "событие с деградацией сервиса, требующее реагирования",
+  "domain": "general"
+ },
+ {
+  "term": "Postmortem",
+  "definition": "разбор инцидента без поиска виновных",
+  "domain": "general"
+ },
+ {
+  "term": "Analytics Event",
+  "definition": "событие в продукте, фиксируемое для аналитики",
+  "domain": "general"
+ },
+ {
+  "term": "Event Tracking",
+  "definition": "система фиксации действий пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "Instrumentation",
+  "definition": "подключение измерений к функциональности продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Cohort Analysis",
+  "definition": "анализ групп пользователей, объединённых по времени входа",
+  "domain": "general"
+ },
+ {
+  "term": "Segmentation",
+  "definition": "разделение пользователей на группы по поведению или признакам",
+  "domain": "general"
+ },
+ {
+  "term": "Behavioral Segmentation",
+  "definition": "сегментация по паттернам использования продукта",
+  "domain": "general"
+ },
+ {
+  "term": "RFM Analysis",
+  "definition": "сегментация по давности, частоте и сумме покупок",
+  "domain": "general"
+ },
+ {
+  "term": "User Persona Segment",
+  "definition": "связка портрета пользователя с поведенческим сегментом",
+  "domain": "general"
+ },
+ {
+  "term": "Baseline",
+  "definition": "исходное значение метрики до изменений",
+  "domain": "general"
+ },
+ {
+  "term": "Trend Analysis",
+  "definition": "анализ динамики метрики во времени",
+  "domain": "general"
+ },
+ {
+  "term": "Seasonality",
+  "definition": "регулярные колебания метрики из-за календаря",
+  "domain": "general"
+ },
+ {
+  "term": "Anomaly Detection",
+  "definition": "автоматическое выявление аномальных значений метрик",
+  "domain": "general"
+ },
+ {
+  "term": "Correlation",
+  "definition": "статистическая связь двух метрик без причинности",
+  "domain": "general"
+ },
+ {
+  "term": "Causation",
+  "definition": "причинно-следственная связь, требующая эксперимента",
+  "domain": "general"
+ },
+ {
+  "term": "Spurious Correlation",
+  "definition": "случайная корреляция без реальной связи",
+  "domain": "general"
+ },
+ {
+  "term": "Data-driven",
+  "definition": "принятие решений на основе данных",
+  "domain": "general"
+ },
+ {
+  "term": "HiPPO Effect",
+  "definition": "опасность решений по мнению самого высокопоставленного",
+  "domain": "general"
+ },
+ {
+  "term": "Decision Log",
+  "definition": "журнал принятых решений с контекстом и причинами",
+  "domain": "general"
+ },
+ {
+  "term": "Retro Documentation",
+  "definition": "фиксация выводов ретроспектив для будущего",
+  "domain": "general"
+ },
+ {
+  "term": "Knowledge Base",
+  "definition": "структурированное хранилище знаний команды",
+  "domain": "general"
+ },
+ {
+  "term": "Cross-team Dependency",
+  "definition": "зависимость работы от другой команды",
+  "domain": "general"
+ },
+ {
+  "term": "Stakeholder Map",
+  "definition": "карта стейкхолдеров с их влиянием и интересами",
+  "domain": "general"
+ },
+ {
+  "term": "Kill Criteria",
+  "definition": "заранее заданные условия остановки проекта или фичи",
+  "domain": "general"
+ },
+ {
+  "term": "Sunset Plan",
+  "definition": "план вывода продукта или фичи из эксплуатации",
+  "domain": "general"
+ },
+ {
+  "term": "Hypothesis Prioritization",
+  "definition": "упорядочение гипотез до проверки",
+  "domain": "general"
+ },
+ {
+  "term": "Discovery Sprint",
+  "definition": "спринт, посвящённый проверке идей и прототипов",
+  "domain": "general"
+ },
+ {
+  "term": "Concept Test",
+  "definition": "проверка идеи на пользователях до создания прототипа",
+  "domain": "general"
+ },
+ {
+  "term": "Fake Door Test",
+  "definition": "проверка спроса кнопкой, за которой нет функциональности",
+  "domain": "general"
+ },
+ {
+  "term": "Wizard of Oz Test",
+  "definition": "имитация автоматической функциональности вручную",
+  "domain": "general"
+ },
+ {
+  "term": "Smoke Test",
+  "definition": "быстрая проверка ключевых сценариев после релиза",
+  "domain": "general"
+ },
+ {
+  "term": "Regression Test",
+  "definition": "проверка, что изменения не сломали существующее",
+  "domain": "general"
+ },
+ {
+  "term": "Quality Gate",
+  "definition": "автоматический барьер: релиз не проходит при падении проверок",
+  "domain": "general"
+ },
+ {
+  "term": "Definition of Ready",
+  "definition": "критерии готовности задачи к взятию в работу",
+  "domain": "general"
+ },
+ {
+  "term": "Capacity Planning",
+  "definition": "расчёт доступных ресурсов команды на период",
+  "domain": "general"
+ },
+ {
+  "term": "Dependency Mapping",
+  "definition": "карта зависимостей между задачами и командами",
+  "domain": "general"
+ },
+ {
+  "term": "Risk Register",
+  "definition": "реестр рисков проекта с мерами реагирования",
+  "domain": "general"
+ },
+ {
+  "term": "Mitigation Plan",
+  "definition": "план снижения вероятности или ущерба риска",
+  "domain": "general"
+ },
+ {
+  "term": "Contingency Plan",
+  "definition": "запасной план при срабатывании риска",
+  "domain": "general"
+ },
+ {
+  "term": "Assumption",
+  "definition": "допущение, принятое без доказательств в планировании",
+  "domain": "general"
+ },
+ {
+  "term": "Premortem",
+  "definition": "упражнение: что могло убить проект ещё до его старта",
+  "domain": "general"
+ },
+ {
+  "term": "Success Criteria",
+  "definition": "измеримые признаки успешности проекта или фичи",
+  "domain": "general"
+ },
+ {
+  "term": "Launch Checklist",
+  "definition": "список обязательных шагов перед релизом",
+  "domain": "general"
+ },
+ {
+  "term": "Go-to-market",
+  "definition": "план вывода продукта или фичи на рынок",
+  "domain": "general"
+ },
+ {
+  "term": "Positioning",
+  "definition": "место продукта в сознании пользователей относительно конкурентов",
+  "domain": "general"
+ },
+ {
+  "term": "Value Proposition",
+  "definition": "обещание ценности продукта целевому пользователю",
+  "domain": "general"
+ },
+ {
+  "term": "Product-market Fit",
+  "definition": "соответствие продукта потребностям рынка",
+  "domain": "general"
+ },
+ {
+  "term": "Market Research",
+  "definition": "исследование рынка, конкурентов и трендов",
+  "domain": "general"
+ },
+ {
+  "term": "Competitive Analysis",
+  "definition": "сравнение продукта с конкурентами по ключевым осям",
+  "domain": "general"
+ },
+ {
+  "term": "SWOT Analysis",
+  "definition": "сильные и слабые стороны, возможности и угрозы",
+  "domain": "general"
+ },
+ {
+  "term": "TAM SAM SOM",
+  "definition": "объём рынка: общий, доступный, реально охватываемый",
+  "domain": "general"
+ },
+ {
+  "term": "Pricing Research",
+  "definition": "исследование чувствительности к цене",
+  "domain": "general"
+ },
+ {
+  "term": "Price Testing",
+  "definition": "экспериментальная проверка уровня цены",
+  "domain": "general"
+ },
+ {
+  "term": "Unit Economics per Feature",
+  "definition": "окупаемость отдельной функциональности",
+  "domain": "general"
+ },
+ {
+  "term": "Support Load",
+  "definition": "объём обращений в поддержку как индикатор проблем",
+  "domain": "general"
+ },
+ {
+  "term": "Support-driven Insight",
+  "definition": "выводы для продукта из тикетов поддержки",
+  "domain": "general"
+ },
+ {
+  "term": "Bug Backlog Ratio",
+  "definition": "доля дефектов против фич в бэклоге",
+  "domain": "general"
+ },
+ {
+  "term": "Hotfix",
+  "definition": "экстренный патч без обычного релизного цикла",
+  "domain": "general"
+ },
+ {
+  "term": "Root Cause Analysis",
+  "definition": "поиск первопричины проблемы, а не симптомов",
+  "domain": "general"
+ },
+ {
+  "term": "Blameless Culture",
+  "definition": "культура разбора ошибок без поиска виновных",
+  "domain": "general"
+ },
+ {
+  "term": "Team Topologies",
+  "definition": "подход к организации команд под поток ценности",
+  "domain": "general"
+ },
+ {
+  "term": "Platform Team",
+  "definition": "команда, строящая общую основу для продуктовых команд",
+  "domain": "general"
+ },
+ {
+  "term": "Enablement",
+  "definition": "подготовка команды или клиента к самостоятельной работе",
+  "domain": "general"
+ },
+ {
+  "term": "Documentation Culture",
+  "definition": "привычка фиксировать решения и знания письменно",
+  "domain": "general"
+ },
+ {
+  "term": "Decision Meeting",
+  "definition": "встреча с заранее заданным решением на выходе",
+  "domain": "general"
+ },
+ {
+  "term": "Async Communication",
+  "definition": "согласование без синхронных встреч",
+  "domain": "general"
+ },
+ {
+  "term": "RFC Process",
+  "definition": "запрос комментариев перед крупным техническим или продуктовым решением",
+  "domain": "general"
+ },
+ {
+  "term": "Design Review",
+  "definition": "согласование дизайна решения с заинтересованными",
+  "domain": "general"
+ },
+ {
+  "term": "Stakeholder Interview",
+  "definition": "интервью со стейкхолдером о целях и ограничениях",
+  "domain": "general"
+ },
+ {
+  "term": "Prioritization Workshop",
+  "definition": "совместная сессия расстановки приоритетов",
+  "domain": "general"
+ },
+ {
+  "term": "Quarterly Planning",
+  "definition": "планирование целей и ресурсов на квартал",
+  "domain": "general"
+ },
+ {
+  "term": "DAU",
+  "definition": "daily active users — уникальные пользователи за день",
+  "domain": "general"
+ },
+ {
+  "term": "WAU",
+  "definition": "weekly active users — уникальные пользователи за неделю",
+  "domain": "general"
+ },
+ {
+  "term": "MAU",
+  "definition": "monthly active users — уникальные пользователи за месяц",
+  "domain": "general"
+ },
+ {
+  "term": "DAU/MAU",
+  "definition": "stickiness — доля месячной аудитории, приходящая ежедневно",
+  "domain": "general"
+ },
+ {
+  "term": "Stickiness",
+  "definition": "регулярность возвращения пользователей в продукт",
+  "domain": "general"
+ },
+ {
+  "term": "Retention D1",
+  "definition": "удержание на первый день после входа",
+  "domain": "general"
+ },
+ {
+  "term": "Retention D7",
+  "definition": "удержание на седьмой день после входа",
+  "domain": "general"
+ },
+ {
+  "term": "Retention D30",
+  "definition": "удержание на тридцатый день после входа",
+  "domain": "general"
+ },
+ {
+  "term": "Retention Curve",
+  "definition": "динамика удержания когорты во времени",
+  "domain": "general"
+ },
+ {
+  "term": "Churn Rate",
+  "definition": "доля пользователей или клиентов, покинувших продукт за период",
+  "domain": "general"
+ },
+ {
+  "term": "Logo Churn",
+  "definition": "отток по числу клиентов без учёта их размера",
+  "domain": "general"
+ },
+ {
+  "term": "Revenue Churn",
+  "definition": "отток по деньгам: потерянная выручка от ушедших клиентов",
+  "domain": "general"
+ },
+ {
+  "term": "Voluntary Churn",
+  "definition": "осознанный уход пользователя из продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Involuntary Churn",
+  "definition": "потеря клиента из-за сбоя оплаты, а не недовольства",
+  "domain": "general"
+ },
+ {
+  "term": "Resurrection",
+  "definition": "возвращение давно неактивного пользователя",
+  "domain": "general"
+ },
+ {
+  "term": "Reactivation Campaign",
+  "definition": "компания по возвращению ушедших пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "CAC",
+  "definition": "customer acquisition cost — стоимость привлечения одного клиента",
+  "domain": "general"
+ },
+ {
+  "term": "Blended CAC",
+  "definition": "средняя стоимость привлечения по всем каналам",
+  "domain": "general"
+ },
+ {
+  "term": "Paid CAC",
+  "definition": "стоимость привлечения только через платные каналы",
+  "domain": "general"
+ },
+ {
+  "term": "Organic Acquisition",
+  "definition": "привлечение без прямых рекламных затрат",
+  "domain": "general"
+ },
+ {
+  "term": "Viral Coefficient",
+  "definition": "сколько новых пользователей приводит один существующий",
+  "domain": "general"
+ },
+ {
+  "term": "K-factor",
+  "definition": "коэффициент вирусности: приглашения, умноженные на конверсию",
+  "domain": "general"
+ },
+ {
+  "term": "Referral Program",
+  "definition": "механизм рекомендаций с вознаграждением",
+  "domain": "general"
+ },
+ {
+  "term": "LTV",
+  "definition": "lifetime value — суммарная ценность клиента за весь срок жизни",
+  "domain": "general"
+ },
+ {
+  "term": "LTV/CAC",
+  "definition": "соотношение ценности клиента и стоимости его привлечения",
+  "domain": "general"
+ },
+ {
+  "term": "CAC Payback",
+  "definition": "срок возврата затрат на привлечение клиента",
+  "domain": "general"
+ },
+ {
+  "term": "ARPU",
+  "definition": "average revenue per user — средняя выручка на пользователя",
+  "domain": "general"
+ },
+ {
+  "term": "ARPPU",
+  "definition": "средняя выручка на платящего пользователя",
+  "domain": "general"
+ },
+ {
+  "term": "ARPAU",
+  "definition": "средняя выручка на аккаунт (для b2b-продуктов)",
+  "domain": "general"
+ },
+ {
+  "term": "MRR",
+  "definition": "monthly recurring revenue — регулярная месячная выручка",
+  "domain": "general"
+ },
+ {
+  "term": "ARR",
+  "definition": "annual recurring revenue — годовая регулярная выручка",
+  "domain": "general"
+ },
+ {
+  "term": "New MRR",
+  "definition": "прирост регулярной выручки от новых клиентов",
+  "domain": "general"
+ },
+ {
+  "term": "Expansion MRR",
+  "definition": "прирост выручки от расширения текущих клиентов",
+  "domain": "general"
+ },
+ {
+  "term": "Contraction MRR",
+  "definition": "потеря выручки от уменьшения тарифов клиентов",
+  "domain": "general"
+ },
+ {
+  "term": "Net Revenue Retention",
+  "definition": "динамика выручки текущих клиентов с учётом расширений и оттока",
+  "domain": "general"
+ },
+ {
+  "term": "Gross Revenue Retention",
+  "definition": "удержание выручки без учёта расширений",
+  "domain": "general"
+ },
+ {
+  "term": "Freemium",
+  "definition": "модель с бесплатной базовой версией и платными возможностями",
+  "domain": "general"
+ },
+ {
+  "term": "Trial",
+  "definition": "временный полный доступ к платному продукту",
+  "domain": "general"
+ },
+ {
+  "term": "Paywall",
+  "definition": "граница между бесплатным и платным контентом",
+  "domain": "general"
+ },
+ {
+  "term": "Monetization",
+  "definition": "способы превращения пользовательской базы в выручку",
+  "domain": "general"
+ },
+ {
+  "term": "Pricing Page",
+  "definition": "страница тарифов и оформления оплаты",
+  "domain": "general"
+ },
+ {
+  "term": "Packaging",
+  "definition": "разделение функциональности по тарифным планам",
+  "domain": "general"
+ },
+ {
+  "term": "Upsell",
+  "definition": "перевод клиента на более дорогой тариф",
+  "domain": "general"
+ },
+ {
+  "term": "Cross-sell",
+  "definition": "продажа дополнительного продукта существующему клиенту",
+  "domain": "general"
+ },
+ {
+  "term": "Conversion Funnel",
+  "definition": "воронка от визита до целевого действия",
+  "domain": "general"
+ },
+ {
+  "term": "Landing Page",
+  "definition": "страница, на которую ведётся трафик кампании",
+  "domain": "general"
+ },
+ {
+  "term": "CTR",
+  "definition": "click-through rate — доля кликов от показов",
+  "domain": "general"
+ },
+ {
+  "term": "CPC",
+  "definition": "cost per click — цена одного клика",
+  "domain": "general"
+ },
+ {
+  "term": "CPA",
+  "definition": "cost per action — цена целевого действия",
+  "domain": "general"
+ },
+ {
+  "term": "CPM",
+  "definition": "cost per mille — цена тысячи показов",
+  "domain": "general"
+ },
+ {
+  "term": "ROAS",
+  "definition": "return on ad spend — возврат на рекламные расходы",
+  "domain": "general"
+ },
+ {
+  "term": "ROMI",
+  "definition": "return on marketing investment — возврат маркетинговых инвестиций",
+  "domain": "general"
+ },
+ {
+  "term": "Attribution Model",
+  "definition": "правила распределения конверсий по каналам",
+  "domain": "general"
+ },
+ {
+  "term": "Last-click Attribution",
+  "definition": "конверсия приписывается последнему каналу",
+  "domain": "general"
+ },
+ {
+  "term": "Multi-touch Attribution",
+  "definition": "конверсия распределяется по всем касаниям",
+  "domain": "general"
+ },
+ {
+  "term": "UTM-разметка",
+  "definition": "метки в ссылках для отслеживания источника трафика",
+  "domain": "general"
+ },
+ {
+  "term": "Lookalike Audience",
+  "definition": "аудитория, похожая на существующих ценных пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "Retargeting",
+  "definition": "реклама на пользователей, уже взаимодействовавших с продуктом",
+  "domain": "general"
+ },
+ {
+  "term": "Channel Fit",
+  "definition": "соответствие канала привлечения типу продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Growth Loop",
+  "definition": "самоподдерживающийся цикл роста продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Growth Hack",
+  "definition": "нестандартный приём быстрого роста с ограниченными ресурсами",
+  "domain": "general"
+ },
+ {
+  "term": "Traction",
+  "definition": "подтверждённый рыночный спрос и рост ключевых метрик",
+  "domain": "general"
+ },
+ {
+  "term": "Product-led Growth",
+  "definition": "рост за счёт самого продукта, а не отдела продаж",
+  "domain": "general"
+ },
+ {
+  "term": "Sales-led Growth",
+  "definition": "рост за счёт прямых продаж клиентам",
+  "domain": "general"
+ },
+ {
+  "term": "Marketing-led Growth",
+  "definition": "рост за счёт маркетинга и контента",
+  "domain": "general"
+ },
+ {
+  "term": "Community-led Growth",
+  "definition": "рост за счёт сообщества вокруг продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Network Effect",
+  "definition": "рост ценности продукта с числом его пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "Switching Cost",
+  "definition": "издержки пользователя при переходе на другой продукт",
+  "domain": "general"
+ },
+ {
+  "term": "Lock-in",
+  "definition": "зависимость пользователя от экосистемы продукта",
+  "domain": "general"
+ },
+ {
+  "term": "Market Penetration",
+  "definition": "доля потенциального рынка, занятая продуктом",
+  "domain": "general"
+ },
+ {
+  "term": "Share of Wallet",
+  "definition": "доля расходов пользователя, приходящаяся на продукт",
+  "domain": "general"
+ },
+ {
+  "term": "Experiment Design",
+  "definition": "планирование эксперимента: гипотеза, метрики, длительность",
+  "domain": "general"
+ },
+ {
+  "term": "Hypothesis Statement",
+  "definition": "формулировка гипотезы в формате если-то-потому что",
+  "domain": "general"
+ },
+ {
+  "term": "Null Hypothesis",
+  "definition": "нулевая гипотеза об отсутствии эффекта",
+  "domain": "general"
+ },
+ {
+  "term": "Alternative Hypothesis",
+  "definition": "гипотеза о наличии ожидаемого эффекта",
+  "domain": "general"
+ },
+ {
+  "term": "Two-sided Test",
+  "definition": "тест, замечающий эффект в обе стороны",
+  "domain": "general"
+ },
+ {
+  "term": "One-sided Test",
+  "definition": "тест, проверяющий эффект только в ожидаемую сторону",
+  "domain": "general"
+ },
+ {
+  "term": "Z-test",
+  "definition": "статистический тест разницы долей на больших выборках",
+  "domain": "general"
+ },
+ {
+  "term": "T-test",
+  "definition": "тест разницы средних двух групп",
+  "domain": "general"
+ },
+ {
+  "term": "Chi-square Test",
+  "definition": "тест связи категориальных переменных",
+  "domain": "general"
+ },
+ {
+  "term": "Mann-Whitney Test",
+  "definition": "непараметрический тест разницы распределений",
+  "domain": "general"
+ },
+ {
+  "term": "CUPED",
+  "definition": "техника снижения дисперсии через ковариаты доэкспериментального периода",
+  "domain": "general"
+ },
+ {
+  "term": "Stratified Sampling",
+  "definition": "разделение выборки на страты для баланса групп",
+  "domain": "general"
+ },
+ {
+  "term": "AA Test",
+  "definition": "проверка корректности разбиения трафика без изменений",
+  "domain": "general"
+ },
+ {
+  "term": "Sample Ratio Mismatch",
+  "definition": "нарушение ожидаемой пропорции групп — признак бага рандомизации",
+  "domain": "general"
+ },
+ {
+  "term": "SRM Check",
+  "definition": "автоматическая проверка пропорций трафика в эксперименте",
+  "domain": "general"
+ },
+ {
+  "term": "Experiment Duration",
+  "definition": "расчётная длительность теста до набора выборки",
+  "domain": "general"
+ },
+ {
+  "term": "Minimum Run Time",
+  "definition": "минимальная длительность для покрытия недельной сезонности",
+  "domain": "general"
+ },
+ {
+  "term": "Holdout Group",
+  "definition": "долговременная группа без изменений для оценки накопленного эффекта",
+  "domain": "general"
+ },
+ {
+  "term": "Reverse A/B",
+  "definition": "выключение фичи у части пользователей для проверки реального эффекта",
+  "domain": "general"
+ },
+ {
+  "term": "Interference",
+  "definition": "перетекание эффекта между группами, искажающее результат",
+  "domain": "general"
+ },
+ {
+  "term": "Network Experiments",
+  "definition": "дизайн тестов для продуктов с сильными связями пользователей",
+  "domain": "general"
+ },
+ {
+  "term": "Switchback Design",
+  "definition": "чередование treatment по времени при interference",
+  "domain": "general"
+ },
+ {
+  "term": "Metric Aggregation",
+  "definition": "правила сворачивания метрики на пользователя",
+  "domain": "general"
+ },
+ {
+  "term": "Ratio Metric",
+  "definition": "метрика-отношение с нестандартной дисперсией",
+  "domain": "general"
+ },
+ {
+  "term": "Proxy Metric",
+  "definition": "замещающая метрика, коррелирующая с целевой",
+  "domain": "general"
+ },
+ {
+  "term": "Leading Indicator",
+  "definition": "опережающий индикатор результата",
+  "domain": "general"
+ },
+ {
+  "term": "Lagging Indicator",
+  "definition": "запаздывающий индикатор результата",
+  "domain": "general"
+ },
+ {
+  "term": "Metric Tree",
+  "definition": "дерево декомпозиции главной метрики на драйверы",
+  "domain": "general"
+ },
+ {
+  "term": "Input Metric",
+  "definition": "метрика, на которую команда влияет напрямую",
+  "domain": "general"
+ },
+ {
+  "term": "Output Metric",
+  "definition": "итоговая метрика результата",
+  "domain": "general"
+ },
+ {
+  "term": "Counter Metric",
+  "definition": "метрика, контролирующая негативную сторону изменения",
+  "domain": "general"
+ },
+ {
+  "term": "Ethical Review",
+  "definition": "проверка эксперимента на этичность воздействия",
+  "domain": "general"
+ },
+ {
+  "term": "Informed Consent",
+  "definition": "информирование пользователя об участии в исследовании",
+  "domain": "general"
+ },
+ {
+  "term": "Test Power Analysis",
+  "definition": "расчёт чувствительности теста до его старта",
+  "domain": "general"
+ },
+ {
+  "term": "Effect Size",
+  "definition": "величина эффекта в единицах измерения или стандартизации",
+  "domain": "general"
+ },
+ {
+  "term": "Cohen's d",
+  "definition": "стандартизированный размер эффекта для средних",
+  "domain": "general"
+ },
+ {
+  "term": "Variance Reduction",
+  "definition": "приёмы уменьшения шума для ускорения тестов",
+  "domain": "general"
+ },
+ {
+  "term": "Bounded Metric",
+  "definition": "метрика с усечением выбросов для стабильности",
+  "domain": "general"
+ },
+ {
+  "term": "Trimmed Mean",
+  "definition": "среднее без крайних значений",
+  "domain": "general"
+ },
+ {
+  "term": "Median Conversion",
+  "definition": "медианное значение конверсии по пользователям",
+  "domain": "general"
+ },
+ {
+  "term": "Bootstrap CI",
+  "definition": "доверительный интервал, посчитанный бутстрэпом",
+  "domain": "general"
+ },
+ {
+  "term": "A/A Testing",
+  "definition": "повторные AA-тесты для валидации платформы",
+  "domain": "general"
+ },
+ {
+  "term": "Confidence Level",
+  "definition": "порог достоверности вывода, обычно 95 процентов",
+  "domain": "general"
+ },
+ {
+  "term": "Sequential Testing",
+  "definition": "тест с законной остановкой по мере накопления данных",
+  "domain": "general"
+ },
+ {
+  "term": "Group Sequential Design",
+  "definition": "план промежуточных анализов с коррекцией альфы",
+  "domain": "general"
+ },
+ {
+  "term": "Bonferroni Correction",
+  "definition": "коррекция порога при множественных сравнениях",
+  "domain": "general"
+ },
+ {
+  "term": "Simpson's Paradox",
+  "definition": "инверсия вывода при агрегации сегментов",
+  "domain": "general"
+ },
+ {
+  "term": "Ecological Fallacy",
+  "definition": "ошибка переноса вывода с группы на индивида",
+  "domain": "general"
+ },
+ {
+  "term": "Experiment Registry",
+  "definition": "каталог всех экспериментов с их статусами",
+  "domain": "general"
+ },
+ {
+  "term": "Feature Freeze",
+  "definition": "запрет новых изменений перед важным релизом",
+  "domain": "general"
+ },
+ {
+  "term": "Post-experiment Analysis",
+  "definition": "разбор результатов теста и решение о раскате",
+  "domain": "general"
+ },
+ {
+  "term": "Rollback Criteria",
+  "definition": "условия, при которых фича откатывается после раскатa",
+  "domain": "general"
+ },
+ {
+  "term": "Launch Decision",
+  "definition": "документированное решение о судьбе эксперимента",
+  "domain": "general"
+ },
+ {
+  "term": "Test Automation",
+  "definition": "автоматический прогон проверок при изменениях кода",
+  "domain": "general"
+ },
+ {
+  "term": "Data Quality Check",
+  "definition": "проверка полноты и корректности данных перед анализом",
+  "domain": "general"
+ },
+ {
+  "term": "Event Schema",
+  "definition": "контракт структуры аналитических событий",
+  "domain": "general"
+ },
+ {
+  "term": "Analytics Governance",
+  "definition": "правила именования и владения событиями",
+  "domain": "general"
+ },
+ {
+  "term": "Metric Ownership",
+  "definition": "закрепление ответственности за метрику",
+  "domain": "general"
+ },
+ {
+  "term": "Data Warehouse",
+  "definition": "хранилище аналитических данных продукта",
+  "domain": "general"
+ },
+ {
+  "term": "ETL Pipeline",
+  "definition": "процесс переноса и преобразования данных",
+  "domain": "general"
+ },
+ {
+  "term": "Dashboard",
+  "definition": "визуальная панель ключевых метрик",
+  "domain": "general"
+ },
+ {
+  "term": "Self-serve Analytics",
+  "definition": "аналитика, доступная команде без запроса к дата-инженерам",
+  "domain": "general"
+ },
+ {
+  "term": "Enterprise Client",
+  "definition": "крупный корпоративный клиент с индивидуальными условиями",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "SMB Segment",
+  "definition": "сегмент малого и среднего бизнеса",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Mid-market",
+  "definition": "сегмент компаний среднего размера между SMB и enterprise",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "ACV",
+  "definition": "annual contract value — годовой объём контракта с клиентом",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "TCV",
+  "definition": "total contract value — общий объём контракта за весь срок",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Deal Size",
+  "definition": "стоимость заключаемой сделки",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Sales Cycle",
+  "definition": "длительность цикла сделки от первого контакта до подписания",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Pipeline",
+  "definition": "список сделок в работе с их стадиями и вероятностями",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Win Rate",
+  "definition": "доля выигранных сделок от общего числа закрытых",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Sales Qualified Lead",
+  "definition": "лид, подтверждённый отделом продаж как целевой",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Marketing Qualified Lead",
+  "definition": "лид, набравший критерии интереса по данным маркетинга",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Product Qualified Lead",
+  "definition": "лид, чьё поведение в продукте говорит о готовности купить",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Lead Scoring",
+  "definition": "оценка готовности лида к покупке по поведению и атрибутам",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Demo",
+  "definition": "демонстрация продукта потенциальному клиенту",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Trial-to-paid",
+  "definition": "конверсия из пробного периода в оплату",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Seat-based Pricing",
+  "definition": "тарификация по числу пользователей-мест",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Usage-based Pricing",
+  "definition": "тарификация по объёму потребления продукта",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Flat Pricing",
+  "definition": "фиксированная цена независимо от объёма использования",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Procurement",
+  "definition": "закупочная процедура клиента перед подписанием",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Security Review",
+  "definition": "проверка безопасности продукта службой клиента",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Vendor Onboarding",
+  "definition": "регистрация поставщика в процессах клиента-корпорации",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "SLA",
+  "definition": "service level agreement — договорённости о качестве сервиса",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Onboarding Plan",
+  "definition": "план внедрения продукта в компании клиента",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Champion",
+  "definition": "внутренний сторонник продукта в компании клиента",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Churn Risk Signal",
+  "definition": "признак возможного ухода клиента: падение активности, жалобы",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Health Score",
+  "definition": "интегральная оценка состояния клиента по активности и поддержке",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Account Manager",
+  "definition": "ответственный за удержание и развитие клиента",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Expansion Opportunity",
+  "definition": "потенциал роста выручки по существующему клиенту",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Multi-seat Expansion",
+  "definition": "расширение числа пользователей в компании клиента",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Renewal",
+  "definition": "продление контракта клиента на новый период",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Renewal Rate",
+  "definition": "доля клиентов, продливших контракт",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Downgrade",
+  "definition": "переход клиента на более дешёвый тариф",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Admin Panel",
+  "definition": "панель управления аккаунтом для администратора клиента",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "SSO",
+  "definition": "single sign-on — вход через корпоративную систему аутентификации",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "RBAC",
+  "definition": "role-based access control — права доступа по ролям",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Audit Log",
+  "definition": "журнал действий пользователей для проверок",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Data Residency",
+  "definition": "требование хранения данных в определённой юрисдикции",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Compliance",
+  "definition": "соответствие продукта отраслевым регуляторным требованиям",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Integration Request",
+  "definition": "запрос клиента на связку с его корпоративной системой",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "API-first Product",
+  "definition": "продукт, построенный вокруг программного интерфейса",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Webhook",
+  "definition": "исходящее уведомление системы о событии",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Tenant",
+  "definition": "изолированное рабочее пространство клиента в мультитенантной системе",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Feature Request from Client",
+  "definition": "запрос функциональности от действующего клиента",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Product Beta with Client",
+  "definition": "совместная обкатка фичи с дружественным клиентом",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Advocacy Program",
+  "definition": "программа превращения клиентов в публичных сторонников продукта",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Case Study",
+  "definition": "история успеха клиента для маркетинга и продаж",
+  "domain": "b2b_saas"
+ },
+ {
+  "term": "Marketplace",
+  "definition": "платформа, соединяющая продавцов и покупателей",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Supply Side",
+  "definition": "сторона предложения: продавцы, исполнители, поставщики",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Demand Side",
+  "definition": "сторона спроса: покупатели и заказчики",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Liquidity",
+  "definition": "доля запросов, успешно завершающихся сделкой",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Matching",
+  "definition": "механизм соединения запроса спроса с предложением",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Take Rate",
+  "definition": "комиссия площадки с транзакции",
+  "domain": "marketplace"
+ },
+ {
+  "term": "GMV",
+  "definition": "gross merchandise value — общий объём сделок через платформу",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Listing",
+  "definition": "карточка предложения продавца на площадке",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Listing Quality",
+  "definition": "полнота и качество карточки, влияющие на конверсию",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Seller Onboarding",
+  "definition": "процесс подключения продавца к площадке",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Seller Rating",
+  "definition": "рейтинг продавца по отзывам покупателей",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Buyer Protection",
+  "definition": "механизмы защиты покупателя: возвраты, споры, гарантии",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Dispute Rate",
+  "definition": "доля заказов со спорами между сторонами",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Refund Rate",
+  "definition": "доля заказов с возвратом средств",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Repeat Purchase Rate",
+  "definition": "доля покупателей, совершивших повторную покупку",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Average Order Value",
+  "definition": "средний чек заказа",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Conversion to Order",
+  "definition": "доля сессий, завершившихся заказом",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Search to Order",
+  "definition": "конверсия от поискового запроса до заказа",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Cold Start Problem",
+  "definition": "отсутствие контента или пользователей на новой площадке",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Chicken-and-egg Problem",
+  "definition": "замкнутый круг: без продавцов нет покупателей и наоборот",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Single-player Mode",
+  "definition": "ценность продукта для одной стороны без другой",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Seeding Supply",
+  "definition": "искусственное наполнение предложения на старте",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Geographic Expansion",
+  "definition": "запуск площадки в новых городах или странах",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Category Expansion",
+  "definition": "расширение на новые товарные категории",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Vertical Marketplace",
+  "definition": "площадка с глубокой экспертизой в одной категории",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Horizontal Marketplace",
+  "definition": "универсальная площадка для многих категорий",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Managed Marketplace",
+  "definition": "модель, где площадка контролирует исполнение заказа",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Full-stack Marketplace",
+  "definition": "площадка, берущая на себя весь операционный цикл",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Programmatic Supply",
+  "definition": "автоматическое подключение поставщиков через API",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Instant Payout",
+  "definition": "мгновенная выплата продавцу после сделки",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Escrow",
+  "definition": "хранение средств площадки до подтверждения исполнения",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Fraud Detection",
+  "definition": "выявление махинаций продавцов или покупателей",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Trust and Safety",
+  "definition": "система правил и модерации для безопасных сделок",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Content Moderation",
+  "definition": "проверка контента листингов на нарушения",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Ranking Algorithm",
+  "definition": "алгоритм сортировки предложений в выдаче",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Fee Structure",
+  "definition": "схема комиссий: подписка, транзакция, листинг",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Promoted Listings",
+  "definition": "платное продвижение карточек продавца",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Seller Churn",
+  "definition": "отток активных продавцов с площадки",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Buyer Cohort",
+  "definition": "когорта покупателей по месяцу первой покупки",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Order Fulfillment",
+  "definition": "исполнение заказа: сборка, доставка, подтверждение",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Delivery SLA",
+  "definition": "обязательства по срокам доставки заказа",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Return Logistics",
+  "definition": "обратная логистика при возврате товара",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Marketplace Net Revenue",
+  "definition": "выручка площадки после выплат продавцам",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Unit Economics",
+  "definition": "экономика на единицу: маржа транзакции минус издержки",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Contribution Margin",
+  "definition": "маржа после переменных издержек на заказ",
+  "domain": "marketplace"
+ },
+ {
+  "term": "Peak Load Pricing",
+  "definition": "динамическая комиссия при пиковом спросе",
+  "domain": "marketplace"
+ },
+ {
+  "term": "KYC",
+  "definition": "know your customer — идентификация клиента перед обслуживанием",
+  "domain": "fintech"
+ },
+ {
+  "term": "AML",
+  "definition": "anti-money laundering — меры против отмывания средств",
+  "domain": "fintech"
+ },
+ {
+  "term": "Transaction Monitoring",
+  "definition": "автоматический контроль операций на подозрительность",
+  "domain": "fintech"
+ },
+ {
+  "term": "Sanctions Screening",
+  "definition": "проверка клиентов и операций по санкционным спискам",
+  "domain": "fintech"
+ },
+ {
+  "term": "Chargeback",
+  "definition": "оспаривание платежа держателем карты",
+  "domain": "fintech"
+ },
+ {
+  "term": "Fraud Rate",
+  "definition": "доля операций, связанных с мошенничеством",
+  "domain": "fintech"
+ },
+ {
+  "term": "Approval Rate",
+  "definition": "доля одобренных заявок или платежей",
+  "domain": "fintech"
+ },
+ {
+  "term": "Credit Scoring",
+  "definition": "оценка кредитоспособности заёмщика",
+  "domain": "fintech"
+ },
+ {
+  "term": "Credit Limit",
+  "definition": "максимально доступный клиенту кредитный лимит",
+  "domain": "fintech"
+ },
+ {
+  "term": "NPL Ratio",
+  "definition": "доля проблемных кредитов в портфеле",
+  "domain": "fintech"
+ },
+ {
+  "term": "Default Rate",
+  "definition": "доля займов, вышедших на просрочку",
+  "domain": "fintech"
+ },
+ {
+  "term": "Provisioning",
+  "definition": "резервирование средств под кредитные потери",
+  "domain": "fintech"
+ },
+ {
+  "term": "Underwriting",
+  "definition": "процедура оценки риска при выдаче кредита",
+  "domain": "fintech"
+ },
+ {
+  "term": "Origination",
+  "definition": "оформление нового кредита или договора",
+  "domain": "fintech"
+ },
+ {
+  "term": "Loan Term",
+  "definition": "срок кредита",
+  "domain": "fintech"
+ },
+ {
+  "term": "APR",
+  "definition": "годовая эффективная ставка по кредиту",
+  "domain": "fintech"
+ },
+ {
+  "term": "Interest Margin",
+  "definition": "разница между ставками привлечения и размещения",
+  "domain": "fintech"
+ },
+ {
+  "term": "Deposit Rate",
+  "definition": "ставка по вкладам для клиентов",
+  "domain": "fintech"
+ },
+ {
+  "term": "Payment Gateway",
+  "definition": "шлюз приёма онлайн-платежей",
+  "domain": "fintech"
+ },
+ {
+  "term": "PSD2",
+  "definition": "европейская директива об открытых платежных сервисах",
+  "domain": "fintech"
+ },
+ {
+  "term": "Open Banking",
+  "definition": "доступ сторонних сервисов к банковским данным с согласия клиента",
+  "domain": "fintech"
+ },
+ {
+  "term": "PCI DSS",
+  "definition": "стандарт безопасности данных держателей карт",
+  "domain": "fintech"
+ },
+ {
+  "term": "Tokenization of Cards",
+  "definition": "замена номера карты токеном для безопасной оплаты",
+  "domain": "fintech"
+ },
+ {
+  "term": "3-D Secure",
+  "definition": "дополнительное подтверждение платежа держателем карты",
+  "domain": "fintech"
+ },
+ {
+  "term": "Payout",
+  "definition": "выплата средств получателю",
+  "domain": "fintech"
+ },
+ {
+  "term": "Settlement",
+  "definition": "расчёт и перевод средств между участниками",
+  "domain": "fintech"
+ },
+ {
+  "term": "Reconciliation",
+  "definition": "сверка операций между системами и партнёрами",
+  "domain": "fintech"
+ },
+ {
+  "term": "Ledger",
+  "definition": "учётный регистр всех финансовых операций",
+  "domain": "fintech"
+ },
+ {
+  "term": "Double-entry Accounting",
+  "definition": "бухгалтерская запись с дебетом и кредитом",
+  "domain": "fintech"
+ },
+ {
+  "term": "Balance Snapshot",
+  "definition": "фиксация баланса на момент времени",
+  "domain": "fintech"
+ },
+ {
+  "term": "Idempotency Key",
+  "definition": "ключ повторной заявки, защищающий от двойных платежей",
+  "domain": "fintech"
+ },
+ {
+  "term": "Payment Success Rate",
+  "definition": "доля успешных платежей от всех попыток",
+  "domain": "fintech"
+ },
+ {
+  "term": "Checkout Conversion",
+  "definition": "конверсия оформления платежа",
+  "domain": "fintech"
+ },
+ {
+  "term": "Abandoned Cart Rate",
+  "definition": "доля брошенных корзин до оплаты",
+  "domain": "fintech"
+ },
+ {
+  "term": "Customer Due Diligence",
+  "definition": "проверка клиента при подозрительной активности",
+  "domain": "fintech"
+ },
+ {
+  "term": "Risk-based Pricing",
+  "definition": "ставка, зависящая от риска клиента",
+  "domain": "fintech"
+ },
+ {
+  "term": "Financial Inclusion",
+  "definition": "доступность финансовых услуг для необслуживаемых групп",
+  "domain": "fintech"
+ },
+ {
+  "term": "Regulatory Sandbox",
+  "definition": "режим для проверки финтех-решений с регулятором",
+  "domain": "fintech"
+ },
+ {
+  "term": "License Requirement",
+  "definition": "требования лицензирования для деятельности",
+  "domain": "fintech"
+ },
+ {
+  "term": "Data Privacy Compliance",
+  "definition": "соответствие законам о персональных данных",
+  "domain": "fintech"
+ },
+ {
+  "term": "Insurtech",
+  "definition": "технологические сервисы в страховании",
+  "domain": "fintech"
+ },
+ {
+  "term": "Loss Ratio",
+  "definition": "доля страховых выплат в собранных премиях",
+  "domain": "fintech"
+ },
+ {
+  "term": "Claims Processing",
+  "definition": "обработка страховых случаев",
+  "domain": "fintech"
+ },
+ {
+  "term": "Premium",
+  "definition": "страховая премия, платимая клиентом",
+  "domain": "fintech"
+ },
+ {
+  "term": "Reinvestment Rate",
+  "definition": "доля прибыли, направляемая на рост продукта",
+  "domain": "fintech"
+ },
+ {
+  "term": "Capital Efficiency",
+  "definition": "эффективность использования капитала в бизнес-модели",
+  "domain": "fintech"
+ },
+ {
+  "term": "Impressions",
+  "definition": "число показов контента или рекламы",
+  "domain": "media"
+ },
+ {
+  "term": "Reach",
+  "definition": "охват — число уникальных пользователей, увидевших контент",
+  "domain": "media"
+ },
+ {
+  "term": "Viewability",
+  "definition": "доля показов рекламы в видимой зоне экрана",
+  "domain": "media"
+ },
+ {
+  "term": "eCPM",
+  "definition": "эффективная цена тысячи показов",
+  "domain": "media"
+ },
+ {
+  "term": "Fill Rate",
+  "definition": "доля запросов рекламы, закрытых показом",
+  "domain": "media"
+ },
+ {
+  "term": "Ad Load",
+  "definition": "плотность рекламы в контентной ленте",
+  "domain": "media"
+ },
+ {
+  "term": "Session Length",
+  "definition": "длительность сессии пользователя",
+  "domain": "media"
+ },
+ {
+  "term": "Session Frequency",
+  "definition": "число сессий пользователя за период",
+  "domain": "media"
+ },
+ {
+  "term": "Watch Time",
+  "definition": "суммарное время просмотра видео",
+  "domain": "media"
+ },
+ {
+  "term": "Completion Rate",
+  "definition": "доля просмотров, доведённых до конца",
+  "domain": "media"
+ },
+ {
+  "term": "Average View Duration",
+  "definition": "средняя длительность просмотра",
+  "domain": "media"
+ },
+ {
+  "term": "Content Velocity",
+  "definition": "скорость публикации нового контента",
+  "domain": "media"
+ },
+ {
+  "term": "Editorial Calendar",
+  "definition": "календарь публикаций контента",
+  "domain": "media"
+ },
+ {
+  "term": "Content Recommendation",
+  "definition": "система подбора контента под пользователя",
+  "domain": "media"
+ },
+ {
+  "term": "Personalization Feed",
+  "definition": "персональная лента контента",
+  "domain": "media"
+ },
+ {
+  "term": "Cold Start Content",
+  "definition": "подача контента новому пользователю без истории",
+  "domain": "media"
+ },
+ {
+  "term": "Engagement Rate",
+  "definition": "доля взаимодействий с контентом от охвата",
+  "domain": "media"
+ },
+ {
+  "term": "Scroll Depth",
+  "definition": "глубина прокрутки страницы пользователем",
+  "domain": "media"
+ },
+ {
+  "term": "Bounce Rate",
+  "definition": "доля визитов с просмотром одной страницы",
+  "domain": "media"
+ },
+ {
+  "term": "Dwell Time",
+  "definition": "время задержки пользователя на элементе",
+  "domain": "media"
+ },
+ {
+  "term": "Subscriptions",
+  "definition": "подписочная модель доступа к контенту",
+  "domain": "media"
+ },
+ {
+  "term": "Paywall Conversion",
+  "definition": "конверсия читателя в подписчика",
+  "domain": "media"
+ },
+ {
+  "term": "Registration Wall",
+  "definition": "требование регистрации для доступа к контенту",
+  "domain": "media"
+ },
+ {
+  "term": "Metered Paywall",
+  "definition": "лимит бесплатных материалов в месяц",
+  "domain": "media"
+ },
+ {
+  "term": "Churn of Subscribers",
+  "definition": "отток подписчиков за период",
+  "domain": "media"
+ },
+ {
+  "term": "Subscriber Lifetime",
+  "definition": "средняя длительность подписки",
+  "domain": "media"
+ },
+ {
+  "term": "Ad-free Tier",
+  "definition": "тариф без рекламы",
+  "domain": "media"
+ },
+ {
+  "term": "Sponsored Content",
+  "definition": "рекламный контент, маркированный как партнёрский",
+  "domain": "media"
+ },
+ {
+  "term": "Native Advertising",
+  "definition": "реклама в формате основного контента",
+  "domain": "media"
+ },
+ {
+  "term": "Programmatic Advertising",
+  "definition": "автоматизированная покупка рекламы через аукционы",
+  "domain": "media"
+ },
+ {
+  "term": "First-party Data",
+  "definition": "данные, собранные продуктом напрямую у пользователей",
+  "domain": "media"
+ },
+ {
+  "term": "Cookieless Future",
+  "definition": "переход аналитики и рекламы без сторонних cookie",
+  "domain": "media"
+ },
+ {
+  "term": "Content Profitability",
+  "definition": "окупаемость производства контента",
+  "domain": "media"
+ },
+ {
+  "term": "Creator Economy",
+  "definition": "модель монетизации авторов контента",
+  "domain": "media"
+ },
+ {
+  "term": "User-generated Content",
+  "definition": "контент, создаваемый самими пользователями",
+  "domain": "media"
+ },
+ {
+  "term": "Moderation Policy",
+  "definition": "правила проверки и удаления контента",
+  "domain": "media"
+ },
+ {
+  "term": "Copyright Compliance",
+  "definition": "соблюдение прав на размещаемый контент",
+  "domain": "media"
+ },
+ {
+  "term": "Content Localization",
+  "definition": "адаптация контента под регионы и языки",
+  "domain": "media"
+ },
+ {
+  "term": "Publishing Frequency",
+  "definition": "частота выхода нового контента",
+  "domain": "media"
+ },
+ {
+  "term": "Editorial Quality Bar",
+  "definition": "минимальные требования к качеству публикаций",
+  "domain": "media"
+ },
+ {
+  "term": "Audience Overlap",
+  "definition": "пересечение аудиторий разных продуктов или разделов",
+  "domain": "media"
+ },
+ {
+  "term": "Cross-promotion",
+  "definition": "взаимная реклама внутри экосистемы продуктов",
+  "domain": "media"
+ },
+ {
+  "term": "Push Notification Opt-in",
+  "definition": "доля пользователей, разрешивших уведомления",
+  "domain": "media"
+ },
+ {
+  "term": "Deep Link",
+  "definition": "ссылка, ведущая внутрь конкретного экрана приложения",
+  "domain": "media"
+ },
+ {
+  "term": "Retention by Content Type",
+  "definition": "удержание в разрезе видов контента",
+  "domain": "media"
+ }
+]
