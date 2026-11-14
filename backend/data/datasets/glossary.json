@@ -6,17 +6,17 @@
  },
  {
   "term": "MMP",
-  "definition": "минимально маркетинговый продукт — версия, готовая к продвижению",
+  "definition": "минимально маркетинговый продукт - версия, готовая к продвижению",
   "domain": "general"
  },
  {
   "term": "MLP",
-  "definition": "минимально любимый продукт — MVP с фокусом на пользовательский опыт",
+  "definition": "минимально любимый продукт - MVP с фокусом на пользовательский опыт",
   "domain": "general"
  },
  {
   "term": "PoC",
-  "definition": "proof of concept — проверка технической реализуемости идеи",
+  "definition": "proof of concept - проверка технической реализуемости идеи",
   "domain": "general"
  },
  {
@@ -41,7 +41,7 @@
  },
  {
   "term": "PRD",
-  "definition": "product requirements document — документ требований к продукту",
+  "definition": "product requirements document - документ требований к продукту",
   "domain": "general"
  },
  {
@@ -106,7 +106,7 @@
  },
  {
   "term": "OKR",
-  "definition": "objectives and key results — каскад целей и измеримых результатов",
+  "definition": "objectives and key results - каскад целей и измеримых результатов",
   "domain": "general"
  },
  {
@@ -186,7 +186,7 @@
  },
  {
   "term": "MDE",
-  "definition": "minimum detectable effect — минимальный эффект, который тест способен заметить",
+  "definition": "minimum detectable effect - минимальный эффект, который тест способен заметить",
   "domain": "general"
  },
  {
@@ -281,12 +281,12 @@
  },
  {
   "term": "JTBD",
-  "definition": "jobs to be done — работа, которую пользователь нанимает продукт выполнить",
+  "definition": "jobs to be done - работа, которую пользователь нанимает продукт выполнить",
   "domain": "general"
  },
  {
   "term": "CJM",
-  "definition": "customer journey map — карта пути пользователя и его точек контакта",
+  "definition": "customer journey map - карта пути пользователя и его точек контакта",
   "domain": "general"
  },
  {
@@ -321,17 +321,17 @@
  },
  {
   "term": "NPS",
-  "definition": "net promoter score — индекс готовности рекомендовать продукт",
+  "definition": "net promoter score - индекс готовности рекомендовать продукт",
   "domain": "general"
  },
  {
   "term": "CSAT",
-  "definition": "customer satisfaction — оценка удовлетворённости продуктом",
+  "definition": "customer satisfaction - оценка удовлетворённости продуктом",
   "domain": "general"
  },
  {
   "term": "CES",
-  "definition": "customer effort score — оценка усилий пользователя для достижения цели",
+  "definition": "customer effort score - оценка усилий пользователя для достижения цели",
   "domain": "general"
  },
  {
@@ -581,7 +581,7 @@
  },
  {
   "term": "SLO",
-  "definition": "service level objective — целевой уровень качества сервиса",
+  "definition": "service level objective - целевой уровень качества сервиса",
   "domain": "general"
  },
  {
@@ -951,22 +951,22 @@
  },
  {
   "term": "DAU",
-  "definition": "daily active users — уникальные пользователи за день",
+  "definition": "daily active users - уникальные пользователи за день",
   "domain": "general"
  },
  {
   "term": "WAU",
-  "definition": "weekly active users — уникальные пользователи за неделю",
+  "definition": "weekly active users - уникальные пользователи за неделю",
   "domain": "general"
  },
  {
   "term": "MAU",
-  "definition": "monthly active users — уникальные пользователи за месяц",
+  "definition": "monthly active users - уникальные пользователи за месяц",
   "domain": "general"
  },
  {
   "term": "DAU/MAU",
-  "definition": "stickiness — доля месячной аудитории, приходящая ежедневно",
+  "definition": "stickiness - доля месячной аудитории, приходящая ежедневно",
   "domain": "general"
  },
  {
@@ -1031,7 +1031,7 @@
  },
  {
   "term": "CAC",
-  "definition": "customer acquisition cost — стоимость привлечения одного клиента",
+  "definition": "customer acquisition cost - стоимость привлечения одного клиента",
   "domain": "general"
  },
  {
@@ -1066,7 +1066,7 @@
  },
  {
   "term": "LTV",
-  "definition": "lifetime value — суммарная ценность клиента за весь срок жизни",
+  "definition": "lifetime value - суммарная ценность клиента за весь срок жизни",
   "domain": "general"
  },
  {
@@ -1081,7 +1081,7 @@
  },
  {
   "term": "ARPU",
-  "definition": "average revenue per user — средняя выручка на пользователя",
+  "definition": "average revenue per user - средняя выручка на пользователя",
   "domain": "general"
  },
  {
@@ -1096,12 +1096,12 @@
  },
  {
   "term": "MRR",
-  "definition": "monthly recurring revenue — регулярная месячная выручка",
+  "definition": "monthly recurring revenue - регулярная месячная выручка",
   "domain": "general"
  },
  {
   "term": "ARR",
-  "definition": "annual recurring revenue — годовая регулярная выручка",
+  "definition": "annual recurring revenue - годовая регулярная выручка",
   "domain": "general"
  },
  {
@@ -1181,32 +1181,32 @@
  },
  {
   "term": "CTR",
-  "definition": "click-through rate — доля кликов от показов",
+  "definition": "click-through rate - доля кликов от показов",
   "domain": "general"
  },
  {
   "term": "CPC",
-  "definition": "cost per click — цена одного клика",
+  "definition": "cost per click - цена одного клика",
   "domain": "general"
  },
  {
   "term": "CPA",
-  "definition": "cost per action — цена целевого действия",
+  "definition": "cost per action - цена целевого действия",
   "domain": "general"
  },
  {
   "term": "CPM",
-  "definition": "cost per mille — цена тысячи показов",
+  "definition": "cost per mille - цена тысячи показов",
   "domain": "general"
  },
  {
   "term": "ROAS",
-  "definition": "return on ad spend — возврат на рекламные расходы",
+  "definition": "return on ad spend - возврат на рекламные расходы",
   "domain": "general"
  },
  {
   "term": "ROMI",
-  "definition": "return on marketing investment — возврат маркетинговых инвестиций",
+  "definition": "return on marketing investment - возврат маркетинговых инвестиций",
   "domain": "general"
  },
  {
@@ -1371,7 +1371,7 @@
  },
  {
   "term": "Sample Ratio Mismatch",
-  "definition": "нарушение ожидаемой пропорции групп — признак бага рандомизации",
+  "definition": "нарушение ожидаемой пропорции групп - признак бага рандомизации",
   "domain": "general"
  },
  {
@@ -1631,12 +1631,12 @@
  },
  {
   "term": "ACV",
-  "definition": "annual contract value — годовой объём контракта с клиентом",
+  "definition": "annual contract value - годовой объём контракта с клиентом",
   "domain": "b2b_saas"
  },
  {
   "term": "TCV",
-  "definition": "total contract value — общий объём контракта за весь срок",
+  "definition": "total contract value - общий объём контракта за весь срок",
   "domain": "b2b_saas"
  },
  {
@@ -1721,7 +1721,7 @@
  },
  {
   "term": "SLA",
-  "definition": "service level agreement — договорённости о качестве сервиса",
+  "definition": "service level agreement - договорённости о качестве сервиса",
   "domain": "b2b_saas"
  },
  {
@@ -1781,12 +1781,12 @@
  },
  {
   "term": "SSO",
-  "definition": "single sign-on — вход через корпоративную систему аутентификации",
+  "definition": "single sign-on - вход через корпоративную систему аутентификации",
   "domain": "b2b_saas"
  },
  {
   "term": "RBAC",
-  "definition": "role-based access control — права доступа по ролям",
+  "definition": "role-based access control - права доступа по ролям",
   "domain": "b2b_saas"
  },
  {
@@ -1876,7 +1876,7 @@
  },
  {
   "term": "GMV",
-  "definition": "gross merchandise value — общий объём сделок через платформу",
+  "definition": "gross merchandise value - общий объём сделок через платформу",
   "domain": "marketplace"
  },
  {
@@ -2076,12 +2076,12 @@
  },
  {
   "term": "KYC",
-  "definition": "know your customer — идентификация клиента перед обслуживанием",
+  "definition": "know your customer - идентификация клиента перед обслуживанием",
   "domain": "fintech"
  },
  {
   "term": "AML",
-  "definition": "anti-money laundering — меры против отмывания средств",
+  "definition": "anti-money laundering - меры против отмывания средств",
   "domain": "fintech"
  },
  {
@@ -2311,7 +2311,7 @@
  },
  {
   "term": "Reach",
-  "definition": "охват — число уникальных пользователей, увидевших контент",
+  "definition": "охват - число уникальных пользователей, увидевших контент",
   "domain": "media"
  },
  {
