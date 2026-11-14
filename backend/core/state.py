@@ -18,6 +18,8 @@ class StateKeys:
     SITUATION = "situation"  # текст продуктовой ситуации
     DOMAIN = "domain"  # b2b_saas | marketplace | fintech | media | general
     DECISION_TYPE = "decision_type"  # тип решения: приоритизация / launch / growth / ...
+    EVAL_MODE = "eval_mode"  # ablation-режим запроса (baseline/full/...): нужен кэшу и eval
+    RETRIEVAL_BACKEND = "retrieval_backend"  # hybrid | bm25 | none: какой канал обслужил запрос
 
     # RAG-контекст (этап 7)
     GLOSSARY_USED = (
@@ -26,7 +28,6 @@ class StateKeys:
     RETRIEVED_CONTEXT = (
         "retrieved_context"  # list[dict]: {case_id, situation, decision, outcome, score}
     )
-    RETRIEVAL_BACKEND = "retrieval_backend"  # hybrid | bm25 | none (деградация Qdrant -> BM25)
 
     # черновик и результаты агентов
     DRAFT = "draft"  # черновик решения (генерируется pipeline'ом, этап 9)

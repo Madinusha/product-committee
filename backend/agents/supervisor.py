@@ -74,8 +74,15 @@ class Supervisor(BaseAgent):
         await self.validator.process(state)
 
         if not self.use_critic:
-            # ablation: только правила — успех определяется валидацией
+            # ablation: только правила - успех определяется валидацией
             passed = state[StateKeys.VALIDATION_PASSED]
+            if not passed and self.use_editor:
+                # режим "Editor без Critic": судьи нет, правим по нарушениям правил
+                log.append("Supervisor: Editor без Critic - правка по нарушениям Validator'а")
+                await self.editor.process(state)
+                await self.validator.process(state)
+                state[StateKeys.ITERATIONS] = int(state.get(StateKeys.ITERATIONS) or 0) + 1
+                passed = state[StateKeys.VALIDATION_PASSED]
             state[StateKeys.SUPERVISOR_STOPPED_REASON] = (
                 StopReason.SUCCESS if passed else StopReason.VALIDATION_FAILED
             )

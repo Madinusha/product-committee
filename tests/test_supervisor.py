@@ -176,16 +176,20 @@ async def test_use_critic_false_validator_only_success(monkeypatch):
 
 
 async def test_use_critic_false_validation_failed(monkeypatch):
+    """Без Critic: валидация не прошла, Editor не смог исправить (NO-CHANGE) -> провал."""
+    from backend.agents.editor import Editor
     from tests.conftest import make_llm_mock
 
     calls = []
     monkeypatch.setattr(Critic, "_call_llm", make_llm_mock({}, calls))
+    monkeypatch.setattr(Editor, "_call_llm", make_llm_mock({"editor": "NO-CHANGE"}, calls))
     supervisor = Supervisor(use_critic=False)
     state = initial_state(SITUATION, "general", draft=DRAFT)
-    state[StateKeys.DECISION] = DRAFT  # "Улучшить продукт" — валидацию не пройдёт
+    state[StateKeys.DECISION] = DRAFT  # "Улучшить продукт" - валидацию не пройдёт
     await supervisor.process(state)
     assert state[StateKeys.SUPERVISOR_STOPPED_REASON] == StopReason.VALIDATION_FAILED
     assert all(call["agent"] != "critic" for call in calls)
+    assert any(call["agent"] == "editor" for call in calls)  # Editor без Critic правит по правилам
 
 
 async def test_use_editor_false_no_iterations(monkeypatch):

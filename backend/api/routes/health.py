@@ -1,12 +1,12 @@
-"""Health-роуты: /healthz (liveness) и /health (readiness с проверкой БД).
+"""Health-роуты: /healthz (liveness) и /health (readiness, этап 8).
 
-По мере добавления сервисов (этапы 7–11) в /health добавляются Ollama,
-Qdrant, Redis — статус 503 при падении любого обязательного компонента.
+/health проверяет все обязательные компоненты (db, ollama, qdrant, redis)
+и отвечает 503, если хотя бы один лежит.
 """
 from fastapi import APIRouter, HTTPException, status
 
 from backend.core.models import HealthResponse
-from backend.db.engine import check_db
+from backend.services.health import run_all_health_checks
 
 router = APIRouter(tags=["health"])
 
@@ -19,9 +19,9 @@ async def liveness() -> HealthResponse:
 
 @router.get("/health", response_model=HealthResponse)
 async def readiness() -> HealthResponse:
-    """Готов ли сервис принимать трафик: БД обязательна."""
-    components: dict[str, str] = {"app": "ok", "db": "ok" if await check_db() else "down"}
-    if components["db"] == "down":
+    """Готов ли сервис принимать трафик: все компоненты обязательны."""
+    components = {"app": "ok", **await run_all_health_checks()}
+    if "down" in components.values():
         raise HTTPException(
             status.HTTP_503_SERVICE_UNAVAILABLE,
             HealthResponse(status="down", components=components).model_dump(),
