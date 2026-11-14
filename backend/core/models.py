@@ -106,3 +106,37 @@ class EnsembleVariant(BaseModel):
 class EnsembleDecideResponse(BaseModel):
     best: EnsembleVariant
     variants: list[EnsembleVariant]
+
+
+# --- Human-in-the-Loop (этап 10) ---
+
+
+class HitlCreateRequest(BaseModel):
+    situation: str = Field(min_length=10, max_length=4000)
+    decision: str = Field(min_length=10, max_length=4000)
+    domain: str = "general"
+    decision_type: str | None = None
+    critic_score: float | None = Field(default=None, ge=0, le=10)
+
+
+class HitlEntryResponse(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    situation: str
+    decision: str
+    domain: str
+    critic_score: float | None
+    status: str
+    reviewer_id: int | None
+    created_at: datetime
+    reviewed_at: datetime | None
+
+
+class HitlListResponse(BaseModel):
+    entries: list[HitlEntryResponse]
+
+
+class HitlDecisionResponse(BaseModel):
+    entry: HitlEntryResponse
+    memory_case_created: bool

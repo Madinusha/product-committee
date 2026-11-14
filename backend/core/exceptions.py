@@ -71,6 +71,10 @@ class UnknownEvalModeError(PipelineError):
     """Неизвестный ablation-режим → 400 со списком поддерживаемых."""
 
 
+class UnknownDomainError(PipelineError):
+    """Неизвестный продуктовый домен → 400 со списком поддерживаемых."""
+
+
 # --- данные ---
 class DataError(CommitteeException):
     pass
@@ -78,6 +82,14 @@ class DataError(CommitteeException):
 
 class DuplicateRecordError(DataError):
     pass
+
+
+class NotFoundError(CommitteeException):
+    """Сущность не найдена -> 404."""
+
+
+class StateConflictError(CommitteeException):
+    """Сущность в неподходящем состоянии для операции -> 409."""
 
 
 # --- внешние сервисы ---
