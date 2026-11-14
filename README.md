@@ -50,6 +50,40 @@ cp .env.example .env          # при первом запуске
 python run.py                 # http://localhost:8000, docs: /docs
 ```
 
+## Запуск одной командой (Docker)
+
+```bash
+cp .env.example .env
+docker compose up --build     # nginx :80, init-контейнер тянет qwen2.5:7b
+```
+
+## Примеры curl
+
+```bash
+# регистрация (первый пользователь - admin)
+curl -X POST localhost:8000/auth/register -H "Content-Type: application/json" \
+  -d '{"email": "pm@example.com", "username": "pm", "password": "Password1"}'
+
+# решение (сначала получив токен)
+TOKEN=$(curl -s -X POST localhost:8000/auth/login -H "Content-Type: application/json" \
+  -d '{"email": "pm@example.com", "password": "Password1"}' | python -c "import sys,json;print(json.load(sys.stdin)['access_token'])")
+
+curl -X POST localhost:8000/decide -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+  -d '{"situation": "Отток 8%/мес, цель 5%, команда 2 человека, срок 1 месяц", "domain": "general", "mode": "full"}'
+
+# повторный вызов того же запроса вернёт cached=true (кэш решений)
+
+# perspective: одна ситуация - решения с позиций нескольких доменов
+curl -X POST localhost:8000/decide/multi -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+  -d '{"situation": "Отток 8%/мес, цель 5%", "domains": ["general", "b2b_saas"]}'
+
+# HITL: подтвердить решение (editor/admin), кейс попадает в Decision Memory
+curl -X POST localhost:8000/hitl/1/approve -H "Authorization: Bearer $TOKEN"
+
+# readiness всех компонентов
+curl localhost:8000/health
+```
+
 ## Структура
 
 ```
