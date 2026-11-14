@@ -140,3 +140,51 @@ class HitlListResponse(BaseModel):
 class HitlDecisionResponse(BaseModel):
     entry: HitlEntryResponse
     memory_case_created: bool
+
+
+# --- admin CRUD (глоссарий, память кейсов, кэш) ---
+
+
+class ImportReportResponse(BaseModel):
+    created: int
+    skipped: int
+    errors: list[str]
+
+
+class DeleteResponse(BaseModel):
+    deleted: int
+
+
+class GlossaryTermOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: str
+    term: str
+    definition: str
+    domain: str
+
+
+class GlossaryListResponse(BaseModel):
+    entries: list[GlossaryTermOut]
+
+
+class MemoryCaseOut(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: str
+    situation: str
+    decision: str
+    outcome: str
+    domain: str
+    decision_type: str
+    quality: int
+
+
+class CasesListResponse(BaseModel):
+    entries: list[MemoryCaseOut]
+
+
+class CacheStatsResponse(BaseModel):
+    entries: int
+    total_hits: int
+    avg_critic_score: float | None = None

@@ -50,12 +50,13 @@ def create_app() -> FastAPI:
         logger.warning("%s -> %d: %s", type(exc).__name__, status_code, exc.message)
         return JSONResponse(status_code=status_code, content={"detail": exc.message, "details": exc.details})
 
-    from backend.api.routes import auth, decide, health, hitl
+    from backend.api.routes import admin, auth, decide, health, hitl
 
     app.include_router(health.router)
     app.include_router(auth.router)
     app.include_router(decide.router)
     app.include_router(hitl.router)
+    app.include_router(admin.router)
 
     # Роуты последующих этапов (регистрируются по мере появления):
     #   этап 6-9: admin.py, eval.py
