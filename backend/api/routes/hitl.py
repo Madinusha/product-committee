@@ -3,6 +3,7 @@
 Отправка в очередь - любой авторизованный; просмотр очереди, подтверждение
 и отклонение - editor/admin (подтверждает продакт-владелец).
 """
+import logging
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, Query
@@ -19,6 +20,7 @@ from backend.core.models import (
 from backend.db.models import HitlQueue, User
 from backend.services import hitl as hitl_service
 
+logger = logging.getLogger("backend.hitl")
 router = APIRouter(prefix="/hitl", tags=["hitl"])
 
 EditorUserDep = Annotated[User, Depends(require_editor)]
@@ -77,6 +79,15 @@ async def approve_entry(
     entry, created = await hitl_service.approve(
         session, entry_id, reviewer_id=user.id, reviewer_name=user.username
     )
+    if created:
+        # связка HITL -> переиндексация (этап 11): кейс должен попасть в retrieval
+        from backend.worker.tasks import trigger_reindex
+
+        reindex_queued = trigger_reindex()
+        logger.info(
+            "HITL: переиндексация %s",
+            "поставлена в очередь" if reindex_queued else "отложена (брокер недоступен)",
+        )
     return HitlDecisionResponse(
         entry=HitlEntryResponse.model_validate(entry),
         memory_case_created=created,
