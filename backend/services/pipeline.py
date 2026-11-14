@@ -223,3 +223,12 @@ async def safe_perform_decision(
     except CommitteeException as exc:
         logger.error("Pipeline: сбой (%s: %s)", type(exc).__name__, exc.message)
         return None, exc
+
+
+def select_best_variant(states: list[dict[str, Any]]) -> dict[str, Any]:
+    """Лучший вариант по оценке Critic'а; None-оценки проигрывают любому числу."""
+    def score(state: dict[str, Any]) -> float:
+        value = state.get(StateKeys.CRITIC_SCORE)
+        return float(value) if value is not None else -1.0
+
+    return max(states, key=score)
