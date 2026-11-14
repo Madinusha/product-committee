@@ -28,7 +28,6 @@ class StateKeys:
     RETRIEVED_CONTEXT = (
         "retrieved_context"  # list[dict]: {case_id, situation, decision, outcome, score}
     )
-    RETRIEVAL_BACKEND = "retrieval_backend"  # hybrid | bm25 | none (деградация Qdrant -> BM25)
 
     # черновик и результаты агентов
     DRAFT = "draft"  # черновик решения (генерируется pipeline'ом, этап 9)
