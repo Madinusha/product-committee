@@ -1,0 +1,116 @@
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: vpc
+      POSTGRES_PASSWORD: vpc
+      POSTGRES_DB: vpc
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U vpc"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    volumes:
+      - qdrant_data:/qdrant/storage
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c ':< /dev/tcp/localhost/6333'"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama_data:/root/.ollama
+
+  ollama-init:
+    image: ollama/ollama:latest
+    depends_on:
+      - ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      OLLAMA_HOST: http://ollama:11434
+    entrypoint: ["/bin/sh", "-c", "ollama pull qwen2.5:7b && echo 'модель загружена'"]
+    restart: "no"
+
+  app:
+    build:
+      context: .
+      dockerfile: infrastructure/Dockerfile
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://vpc:vpc@db:5432/vpc
+      REDIS_URL: redis://redis:6379/0
+      QDRANT_URL: http://qdrant:6333
+      OLLAMA_BASE_URL: http://ollama:11434
+      DEBUG: "false"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
+      ollama-init:
+        condition: service_completed_successfully
+    stop_grace_period: 300s
+    command: ["sh", "-c", "python -c 'import asyncio; from backend.db.engine import init_db; asyncio.run(init_db())' && python run.py"]
+
+  worker:
+    build:
+      context: .
+      dockerfile: infrastructure/Dockerfile
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://vpc:vpc@db:5432/vpc
+      REDIS_URL: redis://redis:6379/0
+      QDRANT_URL: http://qdrant:6333
+      OLLAMA_BASE_URL: http://ollama:11434
+      DEBUG: "false"
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    stop_grace_period: 300s
+    command: ["celery", "-A", "backend.worker.celery_app", "worker", "--loglevel=info"]
+
+  beat:
+    build:
+      context: .
+      dockerfile: infrastructure/Dockerfile
+    env_file: .env
+    environment:
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      redis:
+        condition: service_healthy
+    command: ["celery", "-A", "backend.worker.celery_app", "beat", "--loglevel=info"]
+
+  nginx:
+    image: nginx:1.27-alpine
+    ports:
+      - "80:80"
+    volumes:
+      - ./infrastructure/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - app
+
+volumes:
+  pgdata:
+  qdrant_data:
+  ollama_data:

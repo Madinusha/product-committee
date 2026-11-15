@@ -253,27 +253,87 @@ def build_eval_set(size: int = EVAL_SIZE, seed: int = 43) -> list[dict]:
 
 
 def generate_datasets(out_dir: Path) -> dict[str, int]:
-    """Собрать и записать три датасета. Возвращает счётчики."""
+    """Собрать и записать датасеты (пары + их кейсы входят в decision_memory)."""
     glossary = _build_glossary()
     cases = build_cases()
     eval_set = build_eval_set()
+    retrieval_pairs, pair_cases = build_retrieval_pairs()
+    all_cases = cases + pair_cases  # эталоны пар обязаны быть в корпусе поиска
     if len(glossary) < MIN_GLOSSARY:
         raise ValueError(f"Глоссарий {len(glossary)} < {MIN_GLOSSARY} - требование задания")
-    if len(cases) < MIN_CASES:
-        raise ValueError(f"Кейсы {len(cases)} < {MIN_CASES} - требование задания")
+    if len(all_cases) < MIN_CASES:
+        raise ValueError(f"Кейсы {len(all_cases)} < {MIN_CASES} - требование задания")
 
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "glossary.json").write_text(
         json.dumps(glossary, ensure_ascii=False, indent=1), encoding="utf-8"
     )
     (out_dir / "decision_memory.json").write_text(
-        json.dumps(cases, ensure_ascii=False, indent=1), encoding="utf-8"
+        json.dumps(all_cases, ensure_ascii=False, indent=1), encoding="utf-8"
     )
     (out_dir / "eval_set.json").write_text(
         json.dumps(eval_set, ensure_ascii=False, indent=1), encoding="utf-8"
     )
-    return {"glossary": len(glossary), "cases": len(cases), "eval": len(eval_set)}
+    (out_dir / "retrieval_pairs.json").write_text(
+        json.dumps(retrieval_pairs, ensure_ascii=False, indent=1), encoding="utf-8"
+    )
+    return {
+        "glossary": len(glossary),
+        "cases": len(all_cases),
+        "eval": len(eval_set),
+        "retrieval_pairs": len(retrieval_pairs),
+    }
 
 
 if __name__ == "__main__":
     print(generate_datasets(Path("backend/data/datasets")))
+
+
+def build_retrieval_pairs(count: int = 200, seed: int = 44) -> tuple[list[dict], list[dict]]:
+    """Пары запрос -> эталонный кейс для замера качества поиска (Recall@k, MRR).
+
+    Query - та же продуктовая ситуация в другой формулировке (шаблоны eval-набора),
+    кейс генерируется из тех же параметров и ДОЛЖЕН быть импортирован в Decision
+    Memory (generate_datasets добавляет его в decision_memory.json) - иначе
+    эталон не встретится в корпусе и метрики обнулятся. Возвращает (пары, кейсы).
+    """
+    from backend.data.importers import case_id
+
+    rng = random.Random(seed)
+    domains = [d for d in DOMAIN_PACKS if d != "general"]
+    types = list(EVAL_TEMPLATES)
+    pairs = []
+    pair_cases = []
+    for i in range(count):
+        domain = domains[i % len(domains)]
+        dtype = types[i % len(types)]
+        product = rng.choice(PRODUCTS[domain])
+        metric, unit = rng.choice(METRICS[domain])
+        cur = rng.randint(2, 25) if unit == "%" else rng.choice([150_000, 400_000, 900_000])
+        params = {
+            "product": product, "metric": metric, "unit": unit,
+            "cur": f"{cur:,}".replace(",", " "),
+            "goal": f"{cur * 1.2:.0f}", "team": rng.choice([2, 3, 4]),
+            "horizon": rng.choice(HORIZONS), "period": rng.choice(["3 месяца", "полгода"]),
+            "budget": f"{rng.choice([300, 800])} тыс. руб", "constraint": rng.choice(CONSTRAINTS),
+            "monetization": rng.choice(MONETIZATION), "guardrail": rng.choice(GUARDRAILS),
+            "prev": f"{cur * 1.4:.0f}", "lift": rng.choice([10, 15]),
+        }
+        situation = SITUATION_BY_TYPE[dtype].format(**params)
+        decision = _decision(rng, dtype, params)
+        query = EVAL_TEMPLATES[dtype].format(**params)
+        pairs.append({
+            "query": query,
+            "case_id": case_id(situation, decision),
+            "domain": domain,
+            "decision_type": dtype,
+        })
+        pair_cases.append({
+            "situation": situation,
+            "decision": decision,
+            "outcome": _outcome(rng),
+            "domain": domain,
+            "decision_type": dtype,
+            "quality": rng.choice([6, 7, 8, 9]),
+        })
+    return pairs, pair_cases
